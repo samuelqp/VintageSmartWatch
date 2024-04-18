@@ -1,0 +1,102 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Samue\OneDrive\Projects\Casio-Smart-Watch\nRF52\nRF52 Development Kit - Hardware files 3_0_0\PCA10040-nRF52832 Development Board 3_0_0\Altium Designer files\400150.PcbDoc
+Date     : 2024-04-06
+Time     : 4:06:51 PM
+
+Processing Rule : Clearance Constraint (Gap=0.125mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.254mm) ((InNamedPolygon('Top_Layer-GND'))),((OnLayer('Mechanical 3')))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.203mm) (InNet('ANT') or InNet('RF')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.127mm) (HasFootprint('Solderbridge') or HasFootprint('QFN40P180X140X55-10N')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.254mm) ((InNamedPolygon('Top_Layer-GND')) or (InNamedPolygon('Bottom_Layer-GND')) or (InNamedPolygon('Mid_Layer_1-GND')) or (InNamedPolygon('Mid_Layer_2-VDD'))),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.127mm) (HasFootprint('FPC_05P-0.5mm-RA-SMD')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.1mm) (AsMM(ViaDiameter) = 0.3),(AsMM(ViaDiameter) = 0.3)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.127mm) (HasFootprint('BGA4C40P2X2_76X76X62')),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.127mm) ((InDifferentialPairClass('All Differential Pairs'))),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.11mm) (Max=10.16mm) (Preferred=0.125mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.1mm) (Max=5mm) (All)
+Rule Violations :0
+
+Processing Rule : Pads and Vias to follow the Drill pairs settings
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.225mm) (InDrillLayerPair('Top Layer - Mid-Layer 2')),(InDrillLayerPair('Mid-Layer 2 - Mid-Layer 3'))
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.225mm) (InDrillLayerPair('Mid-Layer 3 - Bottom Layer')),(InDrillLayerPair('Mid-Layer 3 - Bottom Layer'))
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.225mm) (InDrillLayerPair('Mid-Layer 2 - Mid-Layer 3')),(InDrillLayerPair('Mid-Layer 2 - Mid-Layer 3'))
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.225mm) (InDrillLayerPair('Mid-Layer 2 - Mid-Layer 3')),(InDrillLayerPair('Mid-Layer 3 - Bottom Layer'))
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.275mm) (InDrillLayerPair('Top Layer - Mid-Layer 1')),(InDrillLayerPair('Top Layer - Bottom Layer'))
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.45mm) (InDrillLayerPair('Top Layer - Bottom Layer')),(InDrillLayerPair('Top Layer - Bottom Layer'))
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.275mm) (InDrillLayerPair('Mid-Layer 3 - Bottom Layer')),(InDrillLayerPair('Top Layer - Bottom Layer'))
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.275mm) (InDrillLayerPair('Top Layer - Mid-Layer 2')),(InDrillLayerPair('Top Layer - Bottom Layer'))
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.275mm) (InDrillLayerPair('Mid-Layer 2 - Mid-Layer 3')),(InDrillLayerPair('Top Layer - Bottom Layer'))
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.225mm) (InDrillLayerPair('Top Layer - Mid-Layer 1')),(InDrillLayerPair('Top Layer - Mid-Layer 1'))
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.225mm) (InDrillLayerPair('Top Layer - Mid-Layer 1')),(InDrillLayerPair('Top Layer - Mid-Layer 2'))
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.225mm) (InDrillLayerPair('Top Layer - Mid-Layer 2')),(InDrillLayerPair('Top Layer - Mid-Layer 2'))
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.097mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.074mm) (InComponent('U11') or  InComponent('U1') or InComponent('U2') or HasFootprint('BGA4C40P2X2_76X76X62')),(All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (Disabled)(All)
+Rule Violations :0
+
+
+Violations Detected : 0
+Waived Violations : 0
+Time Elapsed        : 00:00:03

@@ -1,0 +1,6 @@
+Record=TopLevelDocument|FileName=sheet1_cover.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=sheet1_cover.SchDoc|FileName=sheet2_radio.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=sheet1_cover.SchDoc|FileName=sheet3_interface_mcu.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=sheet1_cover.SchDoc|FileName=sheet4_buttons_and_leds.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=sheet1_cover.SchDoc|FileName=sheet5_connectors.SchDoc|SheetNumber=5
+Record=NoMainPathDocument|SourceDocument=sheet1_cover.SchDoc|FileName=sheet6_power_supply.SchDoc|SheetNumber=6
