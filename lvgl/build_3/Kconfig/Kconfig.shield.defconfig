@@ -1,0 +1,2 @@
+osource "/home/samuel/local-projects/1030.lvgl/lvgl/boards/shields/*/Kconfig.defconfig"
+osource "/home/samuel/ncs/v2.6.0/nrf/boards/shields/*/Kconfig.defconfig"
