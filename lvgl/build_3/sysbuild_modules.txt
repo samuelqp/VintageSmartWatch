@@ -1,1 +1,0 @@
-"nrf":"/home/samuel/ncs/v2.6.0/nrf":"/home/samuel/ncs/v2.6.0/nrf/sysbuild"

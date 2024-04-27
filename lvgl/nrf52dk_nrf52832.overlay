@@ -44,7 +44,7 @@ arduino_i2c: &i2c0 {
 		reg = <0x3c>;
 		width = <64>;
 		height = <32>;
-		segment-offset = <0>;
+		segment-offset = <0x20>;
 		page-offset = <0>;
 		display-offset = <0>;
 		multiplex-ratio = <31>;

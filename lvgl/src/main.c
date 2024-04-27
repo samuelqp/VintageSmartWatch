@@ -31,6 +31,7 @@ static void button_isr_callback(const struct device *port,
 	ARG_UNUSED(cb);
 	ARG_UNUSED(pins);
 	printk("Button One Pressed\n\r");
+	// lv_label_set_text(sqp_label, "PQS");
 
 	count = 0;
 }
@@ -41,9 +42,13 @@ int main(void)
 	int err;
 	char count_str[11] = {0};
 	const struct device *display_dev;
-	lv_obj_t *sqp_label;
-	lv_obj_t *madelyn_label;
-	// lv_obj_t *count_label;
+	lv_obj_t *clock_label;
+	lv_obj_t *right_border;
+	lv_obj_t *top_border;
+	lv_obj_t *bottom_border;
+	lv_obj_t *left_border;
+	lv_obj_t *center_marker;
+
 
 	display_dev = DEVICE_DT_GET(DT_CHOSEN(zephyr_display));
 	if (!device_is_ready(display_dev)) {
@@ -77,16 +82,27 @@ int main(void)
 	}
 #endif
 
-	sqp_label = lv_label_create(lv_scr_act());
-	madelyn_label = lv_label_create(lv_scr_act());
+	right_border = lv_label_create(lv_scr_act());
+	lv_label_set_text(right_border, "|");
+	lv_obj_align(right_border, LV_ALIGN_RIGHT_MID, 0, 0);
 
-	lv_label_set_text(sqp_label, "SQP");
-	lv_obj_align(sqp_label, LV_ALIGN_TOP_MID, 0, 0);
+	left_border = lv_label_create(lv_scr_act());
+	lv_label_set_text(left_border, "|");
+	lv_obj_align(left_border, LV_ALIGN_LEFT_MID, 0, 0);
 
-	lv_label_set_text(madelyn_label, "Madelyn");
-	lv_obj_align(madelyn_label, LV_ALIGN_BOTTOM_LEFT, 0, 0);
-	// count_label = lv_label_create(lv_scr_act());
-	// lv_obj_align(count_label, LV_ALIGN_BOTTOM_MID, 0, 0);
+	top_border = lv_label_create(lv_scr_act());
+	lv_label_set_text(top_border, "--");
+	lv_obj_align(top_border, LV_ALIGN_TOP_MID, 0, 0);
+
+	bottom_border = lv_label_create(lv_scr_act());
+	lv_label_set_text(bottom_border, "--");
+	lv_obj_align(bottom_border, LV_ALIGN_BOTTOM_MID, 0, 0);
+
+	center_marker = lv_label_create(lv_scr_act());
+	lv_obj_align(center_marker, LV_ALIGN_CENTER, 0, 0);
+
+	// clock_label = lv_label_create(lv_scr_act());
+	// lv_obj_align(clock_label, LV_ALIGN_CENTER, 4, 0);
 
 	lv_task_handler();
 	display_blanking_off(display_dev);
@@ -94,7 +110,8 @@ int main(void)
 	while (1) {
 		if ((count % 100) == 0U) {
 			sprintf(count_str, "%d", count/100U);
-			// lv_label_set_text(count_label, count_str);
+			lv_label_set_text(center_marker, "+");
+			// lv_label_set_text(clock_label, count_str);
 		}
 		lv_task_handler();
 		++count;
